@@ -1,9 +1,13 @@
 <div align="center">
-📱 Termux Customizer
+
+# 📱 Termux Customizer
+## 📱 أداة تخصيص واجهة Termux
+### ꧁ঔৣ☬ Muhannad Daher ☬ঔৣ꧂
+
 </div>
-<div align="center">
-📱 أداة تخصيص واجهة Termux
-</div>
+
+
+
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.x-green?style=for-the-badge&logo=python)
