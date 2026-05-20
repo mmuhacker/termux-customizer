@@ -4,12 +4,6 @@
 ## 📱 أداة تخصيص واجهة Termux
 ### ꧁ঔৣ☬ Muhannad Daher ☬ঔৣ꧂
 
-</div>
-
-
-
-<div align="center">
-
 ![Python](https://img.shields.io/badge/Python-3.x-green?style=for-the-badge&logo=python)
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Termux-brightgreen?style=for-the-badge&logo=android)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
@@ -38,7 +32,7 @@
 | 💬 **رسالة ترحيب** | قابلة للتخصيص بالعربي والإنجليزي |
 | 📅 **إضافات** | تاريخ، وقت، بطارية، تخزين، uptime |
 | 💾 **حفظ تلقائي** | تطبيق مباشر على `~/.bashrc` مع نسخة احتياطية |
-| 🔄 **إعادة ضبط** | إرجاع كل شيء للإفتراضي Termux |
+| 🔄 **إعادة ضبط** | إرجاع كل شيء لافتراضي Termux |
 | 🌐 **دعم العربية** | واجهة عربية كاملة مع RTL صحيح |
 
 ---
@@ -46,11 +40,10 @@
 ## 📱 متطلبات التشغيل / Requirements
 
 ```bash
-# Termux مطلوب تثبيته على Android
 pkg update && pkg upgrade -y
 pkg install python -y
 
-# مكتبات العربية (مطلوبة لعرض النص العربي بشكل صحيح)
+# مكتبات العربية
 pkg install rust -y
 pip install arabic-reshaper
 pip install python-bidi==0.4.2
@@ -58,25 +51,24 @@ pip install python-bidi==0.4.2
 
 ---
 
-## 🚀 طريقة التشغيل / Installation & Run
+## 🚀 التثبيت / Installation
 
-### الطريقة الأولى — تحميل مباشر:
+### التثبيت في المجلد الافتراضي (موصى به):
 ```bash
-# اعطِ Termux صلاحية الوصول للتخزين
-termux-setup-storage
+# 1. أنشئ مجلد bin إن لم يكن موجوداً
+mkdir -p ~/bin
 
-# شغّل الأداة من مجلد التنزيلات
-cd /sdcard/Download
-python mud_tc.py
+# 2. حمّل الأداة مباشرة من GitHub
+curl -o ~/bin/termux-customizer \
+  https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py
+
+# 3. أضف الاختصار
+echo "alias tc='python ~/bin/termux-customizer'" >> ~/.bashrc
+source ~/.bashrc
 ```
 
-### الطريقة الثانية — اختصار دائم:
+### التشغيل:
 ```bash
-# أضف alias في ~/.bashrc
-echo "alias tc='cd /sdcard/Download && python mud_tc.py'" >> ~/.bashrc
-source ~/.bashrc
-
-# من الآن فصاعداً شغّلها بـ:
 tc
 ```
 
@@ -87,10 +79,9 @@ tc
 ```
 ╔══════════════════════════════════════════╗
 ║       Termux Customizer  v1.0            ║
-║       أداة تخصيص واجهة Termux           ║
+║       by Muhannad Daher                  ║
 ╚══════════════════════════════════════════╝
 
-القائمة الرئيسية:
   [1]  اختيار البانر  (ASCII Art)
   [2]  اختيار ثيم الألوان
   [3]  اختيار شكل البروميت
@@ -107,14 +98,14 @@ tc
 ```
 
 ### نظام التنقل:
-- اكتب رقم الخيار لـ **معاينته**
-- `[Y]` للتأكيد و `[N]` للرجوع للقائمة السابقة
+- اكتب رقم الخيار لـ **معاينته أولاً**
+- `[Y]` للتأكيد — `[N]` للرجوع للقائمة السابقة
 - `[N]` في أي قائمة = بدون تخصيص (افتراضي Termux)
 - `[0]` = رجوع للقائمة الرئيسية
 
 ---
 
-## 🎨 البانرات المتوفرة / Available Banners
+## 🎨 البانرات / Banners (45+)
 
 ```
 HACK • TERMUX • MATRIX • Dragon • Cat • Robot
@@ -129,7 +120,7 @@ Pixel Heart • ... والمزيد
 
 ---
 
-## 🌈 الثيمات المتوفرة / Available Themes
+## 🌈 الثيمات / Themes
 
 | الثيم | الألوان |
 |-------|---------|
@@ -141,38 +132,8 @@ Pixel Heart • ... والمزيد
 | Nord ❄ | أبيض وسماوي |
 | Fire 🔥 | أحمر وبرتقالي |
 | Gruvbox 🟤 | بيج وذهبي |
-| Solarized | أزرق وبيج |
-| Monokai | أخضر وبنفسجي |
-
----
-
-## ⚙️ كيف يعمل / How It Works
-
-الأداة تولّد كود Bash وتحفظه في `~/.bashrc`:
-
-```bash
-# مثال على الكود المولّد
-echo -e "\e[1m"
-cat << 'TERMUX_BANNER'
-██╗  ██╗ █████╗  ██████╗██╗  ██╗
-...
-TERMUX_BANNER
-
-echo -e "مرحباً بك في Termux!"
-echo -e "$(date '+%A %d %B %Y')"
-
-export PS1="\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[1;32m\] ▶ \[\e[0m\]"
-```
-
----
-
-## 📂 هيكل الملف / File Structure
-
-```
-termux-customizer/
-├── mud_tc.py          # الأداة الرئيسية
-└── README.md          # هذا الملف
-```
+| Red 🔴 | أحمر |
+| White ⚪ | أبيض |
 
 ---
 
@@ -181,10 +142,21 @@ termux-customizer/
 | المشكلة | الحل |
 |---------|------|
 | النص العربي معكوس | `pip install arabic-reshaper python-bidi` |
-| خطأ `ModuleNotFoundError` | `pip install arabic-reshaper python-bidi==0.4.2` |
-| لا يظهر التغيير بعد التطبيق | `source ~/.bashrc` |
+| خطأ `ModuleNotFoundError` | `pip install python-bidi==0.4.2` |
+| لا يظهر التغيير | `source ~/.bashrc` |
 | خطأ في الصلاحيات | `termux-setup-storage` |
-| `python: command not found` | `pkg install python` |
+| `python: not found` | `pkg install python` |
+| `tc: not found` | `source ~/.bashrc` ثم أعد المحاولة |
+
+---
+
+## 📂 هيكل المستودع / Structure
+
+```
+termux-customizer/
+├── mud_tc.py     # الأداة الرئيسية
+└── README.md     # هذا الملف
+```
 
 ---
 
@@ -204,14 +176,14 @@ termux-customizer/
 
 ```
 MIT License — حر الاستخدام مع ذكر المصدر
-Free to use with attribution
 ```
 
 ---
 
 <div align="center">
 
-⭐ **إذا أعجبتك الأداة، لا تنسَ النجمة!**
-*If you found this useful, please star the repo!* ⭐
+⭐ **إذا أعجبتك الأداة، لا تنسَ النجمة!** ⭐
+
+*If you found this useful, please star the repo!*
 
 </div>
