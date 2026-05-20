@@ -2,7 +2,7 @@
 📱 Termux Customizer
 </div>
 <div align="center">
-#📱 أداة تخصيص واجهة Termux
+📱 أداة تخصيص واجهة Termux
 </div>
 <div align="center">
 
