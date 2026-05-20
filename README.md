@@ -1,6 +1,6 @@
-# 🖥️ Termux Customizer — أداة تخصيص واجهة Termux
-
 <div align="center">
+# 🖥️ Termux Customizer
+# 📱 أداة تخصيص واجهة Termux
 
 ![Python](https://img.shields.io/badge/Python-3.x-green?style=for-the-badge&logo=python)
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Termux-brightgreen?style=for-the-badge&logo=android)
