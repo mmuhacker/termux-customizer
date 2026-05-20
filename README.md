@@ -55,14 +55,13 @@ pip install python-bidi==0.4.2
 
 ### التثبيت في المجلد الافتراضي (موصى به):
 ```bash
-# 1. أنشئ مجلد bin إن لم يكن موجوداً
-mkdir -p ~/bin
 
-# 2. حمّل الأداة مباشرة من GitHub
+# 1. حمّل الأداة مباشرة من GitHub
 curl -o ~/bin/termux-customizer \
+  mkdir -p ~/bin && curl -o ~/bin/termux-customizer \
   https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py
 
-# 3. أضف الاختصار
+# 2. أضف الاختصار
 echo "alias tc='python ~/bin/termux-customizer'" >> ~/.bashrc
 source ~/.bashrc
 ```
