@@ -80,7 +80,7 @@ echo "alias tc='python ~/bin/termux-customizer'" >> ~/.bashrc
 
 **3. لتطبيق التغييرات فوراً:**
 
-نفذ هذا الأمر:
+**نفذ هذا الأمر:**
 ```bash
 source ~/.bashrc
 ```
