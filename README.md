@@ -39,13 +39,28 @@
 
 ## 📱 متطلبات التشغيل / Requirements
 
+**1. تحديث الحزم:**
 ```bash
 pkg update && pkg upgrade -y
-pkg install python -y
+```
 
-# مكتبات العربية
+**2. تثبيت Python:**
+```bash
+pkg install python -y
+```
+
+**3. تثبيت Rust (مطلوب للمكتبات):**
+```bash
 pkg install rust -y
+```
+
+**4. تثبيت مكتبة arabic-reshaper:**
+```bash
 pip install arabic-reshaper
+```
+
+**5. تثبيت مكتبة python-bidi:**
+```bash
 pip install python-bidi==0.4.2
 ```
 
@@ -53,19 +68,22 @@ pip install python-bidi==0.4.2
 
 ## 🚀 التثبيت / Installation
 
-### التثبيت في المجلد الافتراضي (موصى به):
+**1. تحميل الأداة وإنشاء المجلد:**
 ```bash
+mkdir -p ~/bin && curl -o ~/bin/termux-customizer https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py
+```
 
-# 1. حمّل الأداة مباشرة من GitHub
-mkdir -p ~/bin && curl -o ~/bin/termux-customizer \
-  https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py
-
-# 2. أضف الاختصار
+**2. إضافة الاختصار:**
+```bash
 echo "alias tc='python ~/bin/termux-customizer'" >> ~/.bashrc
+```
+
+**3. تطبيق التغييرات:**
+```bash
 source ~/.bashrc
 ```
 
-### التشغيل:
+**4. تشغيل الأداة:**
 ```bash
 tc
 ```
