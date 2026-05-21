@@ -78,10 +78,13 @@ mkdir -p ~/bin && curl -o ~/bin/termux-customizer https://raw.githubusercontent.
 echo "alias tc='python ~/bin/termux-customizer'" >> ~/.bashrc
 ```
 
-**3. تطبيق التغييرات:**
+**3. لتطبيق التغييرات فوراً:**
+
+نفذ هذا الأمر:
 ```bash
 source ~/.bashrc
 ```
+**أو أغلق Termux وأعد فتحه.**
 
 **4. تشغيل الأداة:**
 ```bash
