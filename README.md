@@ -57,8 +57,7 @@ pip install python-bidi==0.4.2
 ```bash
 
 # 1. حمّل الأداة مباشرة من GitHub
-curl -o ~/bin/termux-customizer \
-  mkdir -p ~/bin && curl -o ~/bin/termux-customizer \
+mkdir -p ~/bin && curl -o ~/bin/termux-customizer \
   https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py
 
 # 2. أضف الاختصار
