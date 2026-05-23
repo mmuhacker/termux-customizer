@@ -1,6 +1,5 @@
 <div align="center">
-### 📱 أداة تخصيص واجهة Termux
-
+ 📱 أداة تخصيص واجهة Termux
 
   ##### ꧁ঔৣ☬ Muhannad Daher ☬ঔৣ꧂
 
