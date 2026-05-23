@@ -1,8 +1,8 @@
 <div align="center">
 
-# 📱 Termux Customizer
-## 📱 أداة تخصيص واجهة Termux
-### ꧁ঔৣ☬ Muhannad Daher ☬ঔৣ꧂
+## 📱 Termux Customizer
+### 📱 أداة تخصيص واجهة Termux
+#### ꧁ঔৣ☬ Muhannad Daher ☬ঔৣ꧂
 
 
 **أداة تفاعلية لتخصيص واجهة Termux بالكامل من القوائم**
