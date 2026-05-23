@@ -4,11 +4,7 @@
 ## 📱 أداة تخصيص واجهة Termux
 ### ꧁ঔৣ☬ Muhannad Daher ☬ঔৣ꧂
 
-![Python](https://img.shields.io/badge/Python-3.x-green?style=for-the-badge&logo=python)
-![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Termux-brightgreen?style=for-the-badge&logo=android)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-1.0-orange?style=for-the-badge)
-![Arabic](https://img.shields.io/badge/Arabic-Support-red?style=for-the-badge)
+![المميزات](#-المميزات)
 
 **أداة تفاعلية لتخصيص واجهة Termux بالكامل من القوائم**
 
