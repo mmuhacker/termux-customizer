@@ -1,10 +1,8 @@
 <div align="center">
-
-#### 📱 Termux Customizer
 #### 📱 أداة تخصيص واجهة Termux
 ##### ꧁ঔৣ☬ Muhannad Daher ☬ঔৣ꧂
-
-
+---
+---
 **أداة تفاعلية لتخصيص واجهة Termux بالكامل من القوائم**
 
 *Interactive CLI tool to fully customize your Termux terminal interface*
