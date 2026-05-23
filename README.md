@@ -1,6 +1,6 @@
 <div align="center">
-#### 📱 أداة تخصيص واجهة Termux
-##### ꧁ঔৣ☬ Muhannad Daher ☬ঔৣ꧂
+##### 📱 أداة تخصيص واجهة Termux
+###### ꧁ঔৣ☬ Muhannad Daher ☬ঔৣ꧂
 
 
 **أداة تفاعلية لتخصيص واجهة Termux بالكامل من القوائم**
