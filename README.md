@@ -19,7 +19,7 @@
 - [الثيمات](#-الثيمات)
 - [المشاكل الشائعة](#-المشاكل-الشائعة)
 - [هيكل المستودع](#-هيكل-المستودع)
-- [المطوّر](#-https://github.com/mmuhacker/termux-customizer/blob/main/README.md#%E2%80%8D-%D8%A7%D9%84%D9%85%D8%B7%D9%88%D8%B1)
+- [المطوّر](https://github.com/mmuhacker/termux-customizer/blob/main/README.md#%E2%80%8D-%D8%A7%D9%84%D9%85%D8%B7%D9%88%D8%B1)
 - [الرخصة](#-الرخصة)
 
 ## ✨ المميزات
