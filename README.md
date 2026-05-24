@@ -181,6 +181,7 @@ termux-customizer/
 ---
 
 ## 👨‍💻 المطور
+
 <div align="center">
 
 **Muhannad Daher**
