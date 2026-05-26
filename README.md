@@ -126,8 +126,8 @@ tc
 
 ```
 ╔══════════════════════════════╗
-║       Termux Customizer  v1.0      ║
-║       by Muhannad Daher            ║
+║       Termux Customizer  v1.0  ║
+║       by Muhannad Daher      ║
 ╚══════════════════════════════╝
 
   [1]  اختيار البانر  (ASCII Art)
