@@ -8,12 +8,12 @@
 
 ---
 
-(https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge)
 
 
 
 
-![Platform](https://img.shields.io/badge/Platform-Android-green?style=for-the-badge&logo=android)
+![Platform](https://img.shields.io/badge/Platform-Kali_Linux_&_Android-green?style=for-the-badge&logo=android)
 
 
 
