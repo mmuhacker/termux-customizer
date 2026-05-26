@@ -23,7 +23,7 @@
 
 
 
-![License](https://img.shields.io/badge/License-MIT License-red?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT_License-red?style=for-the-badge)
 
 
 
