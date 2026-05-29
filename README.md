@@ -249,6 +249,7 @@ termux-customizer/
 
 **Muhannad Daher**
 [![GitHub](https://img.shields.io/badge/GitHub-mmuhacker-black?style=for-the-badge&logo=github)](https://github.com/mmuhacker)
+
 ---
 
 ## 📄 الرخصة
