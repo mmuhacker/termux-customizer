@@ -230,7 +230,6 @@ Pixel Heart • ... والمزيد
 | لا يظهر التغيير | `source ~/.bashrc` |
 | خطأ في الصلاحيات | `termux-setup-storage` |
 | `python: not found` | `pkg install python` |
-| `tc: not found` | `source ~/.bashrc` ثم أعد المحاولة |
 
 ---
 
