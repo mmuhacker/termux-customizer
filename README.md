@@ -101,6 +101,11 @@ pip install arabic-reshaper
 pip install python-bidi==0.4.2
 ```
 
+** تثبيت الخط العربي (مرة واحدة إذا لم يكن مثبتاً)**
+```bash
+curl -L "https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwvc-VaA.ttf" -o ~/.termux/font.ttf
+termux-reload-settings
+```
 ---
 
 <div align="center">
@@ -109,21 +114,21 @@ pip install python-bidi==0.4.2
 
 </div>
 
-**1. تحميل الأداة وإنشاء المجلد:**
+**1. تحميل الأداة وتثبيتها في المجلد الأساسي:**
 ```bash
-mkdir -p ~/bin && curl -o ~/bin/termux-customizer https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py
+curl -o $PREFIX/bin/mud_tc.py https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py
 ```
 
-**2. إضافة الاختصار:**
+**2. إعطاء الأداة صلاحيات التنفيذ:**
 ```bash
-echo "alias tc='python ~/bin/termux-customizer'" >> ~/.bashrc
+chmod +x $PREFIX/bin/mud_tc.py
 ```
 
-**3. لتطبيق التغييرات فوراً:**
+**3. إنشاء الإختصار tc ليتم تشغيل الأداة عند كتابته:**
 
-نفذ هذا الأمر:
+**نفذ هذا الأمر:**
 ```bash
-source ~/.bashrc
+ln -sf $PREFIX/bin/mud_tc.py $PREFIX/bin/tc
 ```
 **أو أغلق Termux وأعد فتحه.**
 
