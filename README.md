@@ -101,7 +101,7 @@ pip install arabic-reshaper
 pip install python-bidi==0.4.2
 ```
 
-** تثبيت الخط العربي (مرة واحدة إذا لم يكن مثبتاً)**
+**تثبيت الخط العربي (مرة واحدة إذا لم يكن مثبتاً)**
 ```bash
 curl -L "https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwvc-VaA.ttf" -o ~/.termux/font.ttf
 termux-reload-settings
@@ -130,7 +130,7 @@ chmod +x $PREFIX/bin/mud_tc.py
 ```bash
 ln -sf $PREFIX/bin/mud_tc.py $PREFIX/bin/tc
 ```
-**أو أغلق Termux وأعد فتحه.**
+*قم بتشغيل الأداة بكتابة الإختصار*
 
 **4. تشغيل الأداة:**
 ```bash
@@ -249,7 +249,8 @@ termux-customizer/
 
 **Muhannad Daher**
 [![GitHub](https://img.shields.io/badge/GitHub-mmuhacker-black?style=for-the-badge&logo=github)](https://github.com/mmuhacker)
-[![Contact Us](https://img.shields.io/badge/Contact_Us-black?style=for-the-badge&logo=gmail&logoColor=white)](mailto:madarik.ai.info@gmail.com)
+
+[![Contact Us](https://img.shields.io/badge/Contact_Us-black?style=for-the-badge&logo=gmail&logoColor=red)](mailto:madarik.ai.info@gmail.com)
 
 ---
 
