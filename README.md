@@ -146,8 +146,10 @@ tc
 </div>
 
 ```bash
-pkg update && pkg install python curl -y && pip install arabic-reshaper python-bidi --break-system-packages && curl -o $PREFIX/bin/mud_tc.py https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py && chmod +x $PREFIX/bin/mud_tc.py && ln -sf $PREFIX/bin/mud_tc.py $PREFIX/bin/tc && echo "تم تثبيت أداة التخصيص بنجاح! يمكنك الآن تشغيلها بكتابة: tc"
+pkg update && pkg install python curl -y && pip install arabic-reshaper python-bidi --break-system-packages && curl -o $PREFIX/bin/mud_tc.py https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py && chmod +x $PREFIX/bin/mud_tc.py && ln -sf $PREFIX/bin/mud_tc.py $PREFIX/bin/tc && mkdir -p ~/.termux && curl -L "https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwvc-VaA.ttf" -o ~/.termux/font.ttf && termux-reload-settings && echo "تم التثبيت بنجاح! الأداة جاهزة (tc) والخط العربي تم تفعيله."
+
 ```
+**بهذا يكون تم تثبيت كل ما تحتاجه الأداة لتشغيلها**
 
 ---
 
