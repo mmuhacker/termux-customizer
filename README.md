@@ -41,6 +41,7 @@
 - [المميزات](#-المميزات)
 - [متطلبات التشغيل](#-متطلبات-التشغيل)
 - [التثبيت](#-التثبيت)
+- [التثبيت بأمر واحد](#-التثبيت_بأمر_واحد)
 - [طريقة الاستخدام](#-طريقة-الاستخدام)
 - [نظام التنقل](#-نظام-التنقل)
 - [البانرات](#-البانرات-٤٥-بانر)
@@ -136,6 +137,16 @@ ln -sf $PREFIX/bin/mud_tc.py $PREFIX/bin/tc
 **4. تشغيل الأداة:**
 ```bash
 tc
+```
+---
+<div align="center">
+ 
+## التثبيت بأمر واحد
+*بعد تثبيت الخط*
+</div>
+
+```bash
+pkg update && pkg install python curl -y && pip install arabic-reshaper python-bidi --break-system-packages && curl -o $PREFIX/bin/mud_tc.py https://raw.githubusercontent.com/mmuhacker/termux-customizer/main/mud_tc.py && chmod +x $PREFIX/bin/mud_tc.py && ln -sf $PREFIX/bin/mud_tc.py $PREFIX/bin/tc && echo "تم تثبيت أداة التخصيص بنجاح! يمكنك الآن تشغيلها بكتابة: tc"
 ```
 
 ---
