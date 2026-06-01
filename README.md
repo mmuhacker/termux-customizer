@@ -246,7 +246,7 @@ termux-customizer/
 ---
 
 ## 📄 الرخصة
-MIT License — حر الاستخدام مع ذكر المصدر
+**MIT License — حر الاستخدام مع ذكر المصدر**
 
 ---
 </div>
